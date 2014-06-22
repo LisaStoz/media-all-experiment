@@ -1,0 +1,56 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+    padding: 1%;
+    font-family: arial;
+    color: #576270;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #E69170;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+p {
+    text-align: justify;
+}
+
+/* supposed to be recognised by more browsers than just @media (min-width: 500px) */
+@media all and (min-width: 500px) {
+
+  .explanation {
+    width: 49%;
+    float: left;
+    padding-right: 2%;
+    margin-right: 2%;
+  }
+
+  .explanation.last {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+}
+
+/* supposed to be recognised by less browsers */
+@media (min-width: 500px) {
+
+  .explanation {
+    border-right: 1px solid #E69170;
+  }
+
+  .explanation.last {
+    border-right: none;
+  }
+
+}
